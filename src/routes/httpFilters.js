@@ -7,7 +7,7 @@ function onlyPostJson(req, res, next) {
 }
 
 function inProduction(resources){
-    return resources.payPageEnv === 'test' || resources.payPageEnv === 'prod';
+     resources.env === 'prod';
 }
 
 function returnErrorInDev(resources) {
